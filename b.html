@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="b.css">
+    <script src="b.js"></script>
+    
+
+<head>
+
+    <body>
+        <div id="background_box">
+            <div id="sign_in_box">
+                <form method="GET" id="form">
+                    <h1><b class="white_text">LOGO</b></h1>
+                    <h3 class="white_text">회원가입</h3>
+                    <input type="text" id="id" minlength="6" maxlength="12" required placeholder="아이디"><br>
+                    <input type="password" id="pw" minlength="6" maxlength="15" required required placeholder="비밀번호"><br>
+                    <input type="password" id="pw_re" minlength="6" maxlength="15" required required placeholder="비밀번호 확인"><br>
+                    <input type="email" id="email" minlength="10" maxlength="20" required required placeholder="이메일"><br>
+                    <input type="text" id="name" minlength="2" maxlength="20" required required placeholder="이름"><br>
+                    <label for="birth_y" style="float:left;"  class="white_text">생년월일</label><br>
+                    <input type="number" id="birth_y" required placeholder="년(4자)" style="width:100px; height:20px; float:left;">
+                    <select id="birth_m" required placeholder="월" style="width:50px; height:26px; float:left; margin-left: 10px;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <select id="birth_d" required placeholder="일" style="width:50px; height:26px; float:left; margin-left: 10px;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <br>
+                    <label for="sex" class="white_text" style="float:left;" >성별</label><br>
+                    <input type="radio" class="white_text" name="sex" value="M" style="width:15px; height:15px; float:left;">남성<br>
+                    <input type="radio" class="white_text" name="sex" value="G" style="width:15px; height:15px; float:left;">여성
+                    <br>
+                    <label for="tel1" class="white_text">전화번호</label><br>
+                    <input type="tel" id="tel_1" minlength="3" maxlength="3" value="010" required
+                    style="width:35px; height:30px; float:left;">
+                    <input type="tel" id="tel_2" minlength="4" maxlength="4" required style="width:50px; height:30px; float:left; margin-left: 10px;">
+                    <input type="tel" id="tel_3" minlength="4" maxlength="4" required style="width:50px; height:30px; float:left; margin-left: 10px;">
+                    <br><br><br>
+                    <input id="submit" type="submit" value="회원가입" onclick="check();" style="width:90px; height:50px; float:left;">
+                    <input type="reset" value="다지우기" style="width:90px; height:50px; float:left; margin-left: 20px;">
+                </form>
+            </div>
+        </div>
+    </body>
+</head>
